@@ -10,10 +10,7 @@ import (
 )
 
 // Check checks a single site.
-//
-// Check checks a single site.
-//
-//encore:api public method=POST path=/check/:siteID
+
 //encore:api public method=POST path=/check/:siteID
 func Check(ctx context.Context, siteID int) error {
 	site, err := site.Get(ctx, siteID)
